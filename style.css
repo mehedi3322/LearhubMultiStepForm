@@ -1,0 +1,28 @@
+/* Input Label */
+
+.input-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: #374151;
+}
+
+
+/* Input Field */
+
+.input-field {
+    width: 100%;
+    border: 1px solid #546988;
+    border-radius: 8px;
+    padding: 12px 16px;
+    outline: none;
+}
+
+
+/* Input Focus */
+
+.input-field:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
