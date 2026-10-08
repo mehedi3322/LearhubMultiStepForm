@@ -156,8 +156,10 @@
                             Emergency Contact
                         </label>
 
-                        <input type="tel" name="emergencyContact" placeholder="Emergency contact number" required
+                        <input type="tel" name="emergencyContact" placeholder="Emergency contact number"  required maxlength="11"
+                            pattern="01[0-9]{9}" title="Please enter a valid 11-digit Bangladeshi phone number"
                             class="input-field">
+                            
 
                     </div>
 
