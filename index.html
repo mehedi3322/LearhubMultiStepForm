@@ -90,16 +90,19 @@
                             class="input-field">
                     </div>
 
-                    <div>
-                        <label class="input-label">Phone Number</label>
+                   <div>
+    <label class="input-label">Phone Number</label>
 
-                        <input
-                            type="tel"
-                            name="phone"
-                            placeholder="01XXXXXXXXX"
-                            required
-                            class="input-field">
-                    </div>
+    <input
+        type="tel"
+        name="phone"
+        placeholder="01XXXXXXXXX"
+        required
+        maxlength="11"
+        pattern="01[0-9]{9}"
+        title="Please enter a valid 11-digit Bangladeshi phone number"
+        class="input-field">
+</div>
 
                     <div>
                         <label class="input-label">Email Address</label>
