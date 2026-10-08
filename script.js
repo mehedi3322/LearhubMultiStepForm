@@ -62,7 +62,7 @@ function showStep(step) {
     const progress =
         ((step + 1) / steps.length) * 100;
 
-    progressBar.style.width =  progress + "%";
+    progressBar.style.width = progress + "%";
 
 }
 
@@ -148,27 +148,23 @@ form.addEventListener("submit", function (event) {
         ).value;
 
 
+    const passwordError = document.getElementById("passwordError");
+
     if (password !== confirmPassword) {
 
-        alert(
-            "Password and Confirm Password do not match."
-        );
+        passwordError.classList.remove("hidden");
 
         return;
+
+    } else {
+
+        passwordError.classList.add("hidden");
 
     }
 
 
-    alert(
-        "LearnHub registration completed successfully!"
-    );
-
-
-    form.reset();
-
-    currentStep = 0;
-
-    showStep(currentStep);
+    // NEW: Redirect to Success Page
+    window.location.href = "success.html";
 
 });
 
